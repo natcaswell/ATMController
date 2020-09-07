@@ -20,7 +20,7 @@ class MenuState:
 
     #deposits entered amount into ATM cash box and currently selected account
     def make_deposit(self):
-        amount = input('How munch money would you like to deposit?\n$')
+        amount = input('How much money would you like to deposit?\n$')
         if amount.isnumeric():
             amount = int(amount)
             deposit_result = self.cash_bin.deposit(amount)
